@@ -1,3 +1,18 @@
+Attack parameters:
+- PP_POISON: percetnage of the dataset that has to be poisoned
+- Trigger: pattern of pixel that represent the backdoor trigger. It will be added on the image sample in position X,Y
+- X: position of the top left pixel of the trigger on the sample on the x-axis
+- Y: position of the top left pixel of the trigger on the sample on the y-axis
+
+Attack Evaluation:
+- Acc Train: accuracy of the poisoned model on the poisoned training dataset
+- Acc Val: accuracy of the poisoned model on the clear validation dataset
+- Success Rate: number of poisoned validation samples classified as the target class over the number of total validation samples
+- Attack Performance: score calculated as 4(success_rate*acc_train*(1/pp_poison)*acc_val)/(success_rate+acc_train+(1/pp_poison)+acc_val)
+
+THE STRATEGY WAS USING A GRID SEARCH IN ORDER TO FIN THE COMBINATION OF PP_POISON, X, Y FOR EACH TRIGGER SUCH THAT "Attack Performance" is maximum.
+
+BEST 3 ATTACKS FOR EACH TRIGGER
 - TRIGGER 1 PX
 X: 21
 Y: 13
