@@ -1,8 +1,8 @@
 Attack parameters:
 - PP_POISON: percetnage of the dataset that has to be poisoned
 - Trigger: pattern of pixel that represent the backdoor trigger. It will be added on the image sample in position X,Y
-- X: position of the top left pixel of the trigger on the sample on the x-axis
-- Y: position of the top left pixel of the trigger on the sample on the y-axis
+- X: position of the bottom right pixel of the trigger on the sample on the x-axis
+- Y: position of the bottom right pixel of the trigger on the sample on the y-axis
 
 Attack Evaluation:
 - Acc Train: accuracy of the poisoned model on the poisoned training dataset
