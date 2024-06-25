@@ -91,8 +91,8 @@ Here the bayesian optimization for untargeted and targeted ZOO is implemented
 here BadNets attack is implemented with the whole grid search process used to find best values for it's parameters.
 - <b>Clean-label backdoor poisoning attack</b><br/>
 Here the clean-label black-box attack is implemented.
-- <b>Other solution tried during the experimentation</b><br/>
-Here there are some other things tried during the experimentation which were found to be unsuccessful. 
+
+In the folder ```Experiments```, there is a notebook in which there are all other tries and analysis done during this experimentation.
 
 ## License
 
