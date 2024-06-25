@@ -104,6 +104,8 @@ Each attack has a performace score which represents the performance of the attac
 Performance score is defined as follows:<br/><br/>
 $`$`attack\ performance=4 \frac{SuccessRate\*1/(PP\\_POISON)\*AccTrain\*AccVal}{SuccessRate+1/(PP\\_POISON)+AccTrain+AccVal}`$`$
 
+Here there are the triggers used in BadNets attack:<br/>
+<img src="https://github.com/mattiacolucci/Adversarial-Machine-Learning-On-Traffic-Sign-Recognition/blob/main/Images/triggers.png?raw=true" width="400">
 
 ## License
 
