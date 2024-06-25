@@ -1,6 +1,7 @@
 # Adversarial Machine Learning on a Traffic Sign recognition system
 
-This is a repository which contains the implementation of different Adversarial Machine Learning black-box attacks in order to check the risk that they would related to a traffic sign recognition system.
+This is a repository which contains an experimentation regarding different Adversarial Machine Learning black-box attacks in order to check the risk that they would related to a traffic sign recognition system.<br/>
+This experimentation is a part of a Thesis in Adversarial Machine Learning done by the student Colucci Mattia with the University of Bari, Italy.
 
 For this experimentation, it has been created an implementation of the neural network defined by [Mishra and Goyal](https://link.springer.com/article/10.1007/s11042-022-12531-w), as model on which conduct the attacks.<br/>
 
@@ -42,10 +43,10 @@ Here is represented the model's architecture
 The model has been trained of the [GTSRB dataset](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign). This dataset is composed by 39209 german traffi signs. In order to import it you can download the dataset from Kaggle and put the ```Train``` folder into a folder called ```Dataset``` in the root of this repository.
 
 Our implementation of the model has achived these performances:
-| Accuracy      | Loss    | Avg Precision  | Avg Recall |
-| ------------- |:-------:|:--------------:|:----------:|
-| 99.3%         | 0.022   | 99.8%          | 99.7%      |
-| 99.2%         | 0.029   | 99.3%          | 98.9%      |
+|            | Accuracy      | Loss    | Avg Precision  | Avg Recall |
+|------------| ------------- |:-------:|:--------------:|:----------:|
+| Train      | 99.3%         | 0.022   | 99.8%          | 99.7%      |
+| Validation | 99.2%         | 0.029   | 99.3%          | 98.9%      |
 
 ## Packages used
 
@@ -57,7 +58,7 @@ A python package which provides several attacks. BadNets attack has been impleme
 A library which implements ZOO and AutoZOOM attack by [Chen](https://arxiv.org/abs/1805.11770). ZOO attack has been implemented using the ZOO implementation provied into this library, which code is in the ```Autozoomattack``` folder of this repository.<br/>
 [Link to the library](https://github.com/IBM/Autozoom-Attack)
 - BayesOpt
-A python library which implements bayesian optimization.
+A python library which implements bayesian optimization.<br/>
 [Link to the library](https://bayesian-optimization.github.io/BayesianOptimization/quickstart.html)
 
 In order to use these libraries, you just need to follow the steps explained in the [Installation](#installation) part.
