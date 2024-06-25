@@ -1,7 +1,7 @@
 # Adversarial Machine Learning on a Traffic Sign recognition system
 
-This is a repository which contains an experimentation regarding different Adversarial Machine Learning black-box attacks in order to check the risk that they would related to a traffic sign recognition system.<br/>
-This experimentation is a part of a Thesis in Adversarial Machine Learning done by the student Colucci Mattia with the University of Bari, Italy.
+This is a repository which contains an experimentation regarding different Adversarial Machine Learning black-box attacks in order to check the risk that they would have related to a traffic sign recognition system.<br/>
+This experimentation is a part of a Thesis in Adversarial Machine Learning done by the student Colucci Mattia in collaboration with the University of Bari, Italy.
 
 For this experimentation, it has been created an implementation of the neural network defined by [Mishra and Goyal](https://link.springer.com/article/10.1007/s11042-022-12531-w), as model on which conduct the attacks.<br/>
 
@@ -93,6 +93,17 @@ here BadNets attack is implemented with the whole grid search process used to fi
 Here the clean-label black-box attack is implemented.
 
 In the folder ```Experiments```, there is a notebook in which there are all other tries and analysis done during this experimentation.
+
+
+## RESULTS
+
+In the folder ```Results``` of this repository there are the results of the ZOO, BadNets and Clean-label attack.
+
+Results of BadNets are explained into a pdf which shows the performance of  the 3 most performed attacks for each trigger, according to a performance score. Each attack is identified by the triple (trigger, trigger position, PP_POSION) which refers to the trigger used in the attack, the position on which it will be put on the image and the percentage of the training dataset that will be poisoned (PP_POISON).<br/>
+Each attack has a performace score which represents the performance of the attack based on accuracy on validation and training dataset, PP_POISON and success_rate.<br/>
+Performance score is defined as follows:<br/><br/>
+$attack\ performance=4 \frac{TassoSuccesso*1/(PP\_POISON)*AccTrain*AccVal}{TassoSuccesso+1/(PP\_POISON)+AccTrain+AccVal}$
+
 
 ## License
 
