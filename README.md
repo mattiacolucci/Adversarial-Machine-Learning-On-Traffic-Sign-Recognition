@@ -102,7 +102,7 @@ In the folder ```Results``` of this repository there are the results of the ZOO,
 Results of BadNets are explained into a pdf which shows the performance of  the 3 most performed attacks for each trigger, according to a performance score. Each attack is identified by the triple (trigger, trigger position, PP_POSION) which refers to the trigger used in the attack, the position on which it will be put on the image and the percentage of the training dataset that will be poisoned (PP_POISON).<br/>
 Each attack has a performace score which represents the performance of the attack based on accuracy on validation and training dataset, PP_POISON and success_rate.<br/>
 Performance score is defined as follows:<br/><br/>
-$`$`attack\ performance=4 \frac{SuccessRate*1/(PP\_POISON)*AccTrain*AccVal}{SuccessRate+1/(PP\_POISON)+AccTrain+AccVal}`$`$
+$`$`attack\ performance=4 \frac{SuccessRate*1/(PP\\_POISON)*AccTrain*AccVal}{SuccessRate+1/(PP\\_POISON)+AccTrain+AccVal}`$`$
 
 
 ## License
