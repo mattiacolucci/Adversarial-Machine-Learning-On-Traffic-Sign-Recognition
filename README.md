@@ -99,10 +99,15 @@ In the folder ```Experiments```, there is a notebook in which there are all othe
 
 In the folder ```Results``` of this repository there are the results of the ZOO, BadNets and Clean-label attack.
 
+Results of ZOO attack are explained into a pdf which shows the properties and performances of the 10 most performed zoo attacks, according the a performance score, for the untargeted and targeted version. Each attack is identified by the tuple (initial const, confidence, learning rate, max iterations).<br/>
+The performance score used to calculate the performance of an attack, based on success rate and average norm of the difference between adversarial and original examples, is the following:<br/><br/>
+
+$`$`ZOO\ attack\ performance=SuccessRate-\frac{AvgNorm}{12}`$`$
+
 Results of BadNets are explained into a pdf which shows the performance of  the 3 most performed attacks for each trigger, according to a performance score. Each attack is identified by the triple (trigger, trigger position, PP_POSION) which refers to the trigger used in the attack, the position on which it will be put on the image and the percentage of the training dataset that will be poisoned (PP_POISON).<br/>
 Each attack has a performace score which represents the performance of the attack based on accuracy on validation and training dataset, PP_POISON and success_rate.<br/>
 Performance score is defined as follows:<br/><br/>
-$`$`attack\ performance=4 \frac{SuccessRate\*1/(PP\\_POISON)\*AccTrain\*AccVal}{SuccessRate+1/(PP\\_POISON)+AccTrain+AccVal}`$`$
+$`$`BadNets\ attack\ performance=4 \frac{SuccessRate\*1/(PP\\_POISON)\*AccTrain\*AccVal}{SuccessRate+1/(PP\\_POISON)+AccTrain+AccVal}`$`$
 
 Here there are the triggers used in BadNets attack:<br/>
 <img src="https://github.com/mattiacolucci/Adversarial-Machine-Learning-On-Traffic-Sign-Recognition/blob/main/Images/triggers.png?raw=true" width="400">
