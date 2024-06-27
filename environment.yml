@@ -1,4 +1,4 @@
-name: /home/colucci/Tesi/tf1
+name: experimentatioTf1
 channels:
   - defaults
 dependencies:
