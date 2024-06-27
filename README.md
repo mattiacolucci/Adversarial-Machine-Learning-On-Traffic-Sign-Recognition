@@ -72,7 +72,7 @@ In order to reprocuce the virtual environment used in this experimentation, cond
 ```
 conda env create -f environment.yml
 ```
-With ```environment.yml``` the file in the root of the repository. By doing this, all packages are also imported to the created environment.
+With ```environment.yml``` the file in the root of the repository. By doing this, a new environment called "experimentationTf1" is created and all packages are also imported to the created environment.
 
 And that's it!
 
