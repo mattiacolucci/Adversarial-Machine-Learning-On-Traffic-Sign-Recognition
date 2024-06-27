@@ -74,6 +74,12 @@ conda env create -f environment.yml
 ```
 With ```environment.yml``` the file in the root of the repository. By doing this, a new environment called "experimentationTf1" is created and all packages are also imported to the created environment.
 
+Once activated the conda environment by the command: ```conda activate experimentationTf1```, if some packages are missed you can run the following command:
+```
+pip install -r requirements.txt
+```
+Which tries to reinstall all pip packages used in the experimentation.
+
 And that's it!
 
 ## The Notebook
