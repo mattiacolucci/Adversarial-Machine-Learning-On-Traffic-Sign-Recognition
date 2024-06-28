@@ -119,6 +119,8 @@ $`$`BadNets\ attack\ performance=4 \frac{SuccessRate\*1/(PP\\_POISON)\*AccTrain\
 Here there are the triggers used in BadNets attack:<br/>
 <img src="https://github.com/mattiacolucci/Adversarial-Machine-Learning-On-Traffic-Sign-Recognition/blob/main/Images/triggers.png?raw=true" width="400">
 
+The clean-label black-box attack has failed and so results are not reported in this repository.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
