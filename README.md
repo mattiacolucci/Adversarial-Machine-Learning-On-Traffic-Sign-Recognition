@@ -85,7 +85,7 @@ And that's it!
 
 ## The Notebook
 
-The notebook is divided into sections:
+The notebook present in the file ```Traffic Sign Recognition Attack tfv1.ipynb```, is divided into sections:
 - <b>Introduction</b><br/>
 Here the model is defined, its dataset is loaded, and the model is trained or it's weights can be loaded if you want to use the same model used during the experimentation.
 - <b>Model performances</b><br/>
