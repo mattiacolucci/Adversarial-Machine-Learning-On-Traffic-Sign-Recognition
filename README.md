@@ -40,8 +40,9 @@ Here is represented the model's architecture
 ![alt text](https://github.com/mattiacolucci/Adversarial-Machine-Learning-On-Traffic-Sign-Recognition/blob/main/Images/model_architecture.png?raw=true "Model's architecture")
 > Image took from the [paper of the model](https://link.springer.com/article/10.1007/s11042-022-12531-w)
 
-The model has been trained of the [GTSRB dataset](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign). This dataset is composed by 39209 german traffi signs. In order to import it you can download the dataset from Kaggle and put the ```Train``` folder into a folder called ```Dataset Images``` in the root of this repository.<br/><br/>
-In order to use the exact train/validation split used in this experimentation, the dataset can be imported from numpy files in the ```Dataset Numpy``` folder in the root of this repository.
+The model has been trained of the [GTSRB dataset](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign). This dataset is composed by 39209 german traffi signs. In order to import it you can download the dataset from Kaggle and put the ```Train``` folder into a folder called ```Dataset Images``` in the root of this repository.
+
+In order to use the exact train/validation split used in this experimentation, the dataset can be downloaded [here](https://drive.google.com/drive/folders/1FsY9TML_sB14m8P9ssYT4ZkoJFXQ1-tz?usp=sharing) and put into the ```Dataset Numpy``` folder in the root of this repository. The dataset is represented as numpy files with .npy extension.
 
 Our implementation of the model has achived these performances:
 |            | Accuracy      | Loss    | Avg Precision  | Avg Recall |
